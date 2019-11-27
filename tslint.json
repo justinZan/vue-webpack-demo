@@ -20,7 +20,7 @@
         "object-literal-sort-keys": false, // 组件按字母顺序排列
         "space-before-function-paren": false, // 函数前禁止空格
         "switch-final-break": true, // 检测switch语句后是否有break
-        "variable-name": true, // 错误变量名检查
+        "variable-name": false, // 错误变量名检查
         "arrow-parens": false,
         "member-access": false, // 箭头函数参数必须加括号
         "no-empty": false,

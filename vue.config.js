@@ -1,7 +1,7 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
     devServer: {
-        port: 8383, // 端口号
+        port: 8080, // 端口号
         host: 'localhost',
         https: false, // https:{type:Boolean}
         open: false, //配置自动启动浏览器
