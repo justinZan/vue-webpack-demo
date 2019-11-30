@@ -1,6 +1,19 @@
-@import '../../assets/styles/themes/variables.scss';
-
-.header{
-    height: 50px;
-    background: $mainColor;
+.header {
+  height: 50px;
+  background: $mainColor;
+  .menu-list {
+    display: flex;
+    .router-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      color: #fff;
+    }
+    .active-router{
+        background: $boxBackground;
+        color: $mainColor;
+    }
+  }
 }

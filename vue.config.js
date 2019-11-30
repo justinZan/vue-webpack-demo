@@ -28,6 +28,13 @@ module.exports = {
         //   chunks: ['chunk-vendors', 'chunk-common', 'index'] // 在这个页面中包含的块，默认情况下会包含,提取出来的通用 chunk 和 vendor chunk
         }
       },
+    css: {
+        loaderOptions: {
+            scss: {
+                prependData: `@import "~@/assets/styles/index.scss";`
+              }
+        }
+    },
 
     configureWebpack: config => {
         

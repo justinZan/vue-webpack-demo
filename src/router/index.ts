@@ -8,7 +8,19 @@ export const RouterMap: RouteConfig[] = [
     {
         path: Path.HOME,
         name: RouterPrefix(RouterName.Home),
-        component: () => import('../views/layout/layout.vue')
+        meta: { index: 0 },
+        component: () => import('../views/layout/layout.vue'),
+        children: [{
+            path: Path.AddressBook,
+            name: RouterPrefix(RouterName.AddressBook),
+            meta: { index: 1 },
+            component: () => import('../components/address-book/address-book.vue'),
+        }, {
+            path: Path.CommonLink,
+            name: RouterPrefix(RouterName.CommonLink),
+            meta: { index: 2 },
+            component: () => import('../components/common-link/common-link.vue'),
+        }]
     }
 ]
 

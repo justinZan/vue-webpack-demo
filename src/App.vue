@@ -6,18 +6,13 @@
 
 <script lang="ts">
 import { Vue, Component, Prop, Watch, Emit } from "vue-property-decorator";
-import HelloWorld from "./components/hello-word.vue";
 
-@Component({
-  components: {
-    HelloWorld
-  }
-})
+@Component({})
 export default class App extends Vue {
   created() {}
 }
 </script>
 
 <style lang="scss">
-@import './assets/styles/index.scss';
+@import "./assets/styles/index.scss";
 </style>
