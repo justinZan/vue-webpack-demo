@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve && npm run build",
+    "serve": "gulp merage-language && vue-cli-service serve && npm run build ",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "D": "^1.0.0",
     "core-js": "^3.3.2",
     "element-ui": "^2.13.0",
     "vue": "^2.6.10",
@@ -20,6 +21,10 @@
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-typescript": "^4.0.5",
     "@vue/cli-service": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-merge-json": "^1.3.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-shell": "^0.7.1",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "tslint": "^5.20.1",
