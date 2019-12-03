@@ -14,12 +14,17 @@ export const RouterMap: RouteConfig[] = [
             path: Path.AddressBook,
             name: RouterPrefix(RouterName.AddressBook),
             meta: { index: 1 },
-            component: () => import('../components/address-book/address-book.vue'),
+            component: () => import(/* webpackChunkName: "AddressBook" */
+                '../components/address-book/address-book.vue'),
         }, {
             path: Path.CommonLink,
             name: RouterPrefix(RouterName.CommonLink),
             meta: { index: 2 },
-            component: () => import('../components/common-link/common-link.vue'),
+            component: () => import(/* webpackChunkName: "CommonLink" */
+                '../components/common-link/common-link.vue'),
+        }, {
+            path: '',
+            redirect: Path.AddressBook
         }]
     }
 ]
