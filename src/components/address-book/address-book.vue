@@ -1,5 +1,8 @@
 <template>
-  <div class="address-book">address-book</div>
+  <div class="address-book">
+    address-book
+    <img :src="logo" alt />
+  </div>
 </template>
 
 <script lang="ts">
@@ -12,14 +15,18 @@ import addressBookService from "../../api/address-book-service";
 export default class AddressBook extends Vue {
   @Getter(Apptypes.getters.CONFIGS)
   configs: any;
+  private logo = require("../../assets/images/logo.png");
 
   created() {
     console.log("-------------", this.configs);
-    addressBookService.getAddressBook().then((res: any) => {
-      console.log("----------------res", res);
-    }).catch(() => {
-      console.log('-------------报错啦')
-    });
+    addressBookService
+      .getAddressBook()
+      .then((res: any) => {
+        console.log("----------------res", res);
+      })
+      .catch(() => {
+        console.log("-------------报错啦");
+      });
   }
 }
 </script>
