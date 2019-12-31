@@ -8,11 +8,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "D": "^1.0.0",
     "axios": "^0.19.0",
     "axios-observable": "^1.1.2",
     "core-js": "^3.3.2",
     "element-ui": "^2.13.0",
+    "justin-event-bus": "^1.0.1",
     "justin-http": "^0.1.0",
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",
