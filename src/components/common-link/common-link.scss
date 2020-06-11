@@ -1,0 +1,26 @@
+.common-link {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  .top-box {
+    background: #fff;
+    flex: 1;
+    margin-bottom: 15px;
+  }
+  .bottom-box {
+    background: #fff;
+    height: auto;
+    line-height: 25px;
+  }
+  .show-box {
+    height: 0;
+    transition: all .1s linear;
+  }
+  .box-show {
+    height: 200px !important;
+    overflow: hidden;
+  }
+  .button {
+    height: 50px;
+  }
+}
